@@ -23,8 +23,8 @@ setStep(step + 1);
   }
 
   return(
-    <div>
-      <button className="close">&times</button>
+    <>
+      <button className="close" onClick={() => setIsOpen(!isOpen)}>&times</button>
       { isOpen &&(
   <div className="steps">
     <div className="numbers">
@@ -42,6 +42,6 @@ setStep(step + 1);
     
     </div>
  )}
-    </div>
+    </>
   )
 }
